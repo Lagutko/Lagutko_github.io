@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container div {
+    margin: 5px 0;
+}
+
+.limbs, .genders, .radios, #gender-block, #limbs-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gender-block .radios {
+    width: 82%;
+}
+
+.radios {
+    width: 65%;
+    padding: 0 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#send-btn {
+    width: 100%;
+	background-color: red;
+}
