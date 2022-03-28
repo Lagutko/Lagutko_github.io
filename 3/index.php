@@ -75,7 +75,7 @@ try {
     $stmt->execute(array($name, $email, $date, $gender, $limbs, $bio, $policy));
     $power_id = $db->lastInsertId();
 
-    $superpowers = $db->prepare("INSERT INTO powers SET powers = ?, user_id = ? ");
+    $superpowers = $db->prepare("INSERT INTO powers SET powers = ?, user_id = ?");
     $superpowers->execute(array($powers, $power_id));
 } catch (PDOException $e) {
     print('Error : ' . $e->getMessage());
