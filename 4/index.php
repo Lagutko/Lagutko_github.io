@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         setcookie('select_error', '1', time() + 24 * 60 * 60);
         $errors = TRUE;
     } else {
-        setcookie('select_value', $_POST['select'], time() + 12 * 30 * 24 * 60 * 60);
+        setcookie('select_value', implode(',', $_POST['select']), time() + 12 * 30 * 24 * 60 * 60);
     }
 
     // проверка поля биографии
