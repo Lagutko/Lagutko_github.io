@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: center;
+    flex-direction: column;
 }
 
 .form-container div {
@@ -43,6 +43,6 @@ body {
 .error {
     color: rgba(245, 46, 46, 1);
     border: 1px solid rgba(245, 46, 46, 1);
-    box-shadow: 0px 10px 10px rgba(245, 46, 46, 1);
-    margin: 7px 0;
+    box-shadow: 0px 10px 20px rgba(245, 46, 46, 1);
+    margin: 7px;
 }
