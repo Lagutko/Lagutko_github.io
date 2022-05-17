@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-    <title>Zadanie 4</title>
+    <title>Zadanie 5</title>
 </head>
 
 <body>
@@ -21,8 +21,11 @@
     ?>
     <div class="form-container">
         <form method="POST" action="">
+            <div class="logout-btn">
+            <a href="login.php?logout=1" <?php (empty($_SESSION['login'])) ? print('style="display:none"') : print('style="display:inline-block"'); ?>>Выйти</a>
+          </div>
             <div class="input-group">
-                <span class="input-group-text" id="basic-addon1">Имя</span>
+                <span class="input-group-text" >Имя</span>
                 <input type="text" class="form-control" name="name" placeholder="Ваше имя" <?php if ($errors['name']) {
                                                                                                 print 'class="error"';
                                                                                             } ?> value="<?php print $values['name']; ?>" />
