@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-    <title>Zadanie 5</title>
+    <title>Zadanie 6</title>
 </head>
 
 <body>
@@ -90,10 +90,10 @@
                     </div>
                 </div>
             </div>
-            <select class="form-select form-select-lg mb-2" name="select[]" multiple <?php if ($errors['select']) {
+            <select class="form-select form-select-lg mb-2" name="powers[]" multiple <?php if ($errors['powers']) {
                                                                                             print 'class="error"';
                                                                                         } ?>>
-                <option value="inf" <?php $arr = explode(',', $values['select']);
+                <option value="inf" <?php $arr = explode(',', $values['powers']);
                                     if ($arr != '') {
                                         foreach ($arr as $value) {
                                             if ($value == "inf") {
@@ -102,7 +102,7 @@
                                         }
                                     }
                                     ?>>Бессмертие</option>
-                <option value="through" <?php $arr = explode(',', $values['select']);
+                <option value="through" <?php $arr = explode(',', $values['powers']);
                                         if ($arr != '') {
                                             foreach ($arr as $value) {
                                                 if ($value == "through") {
@@ -111,7 +111,7 @@
                                             }
                                         }
                                         ?>>Прохождение сквозь стены</option>
-                <option value="levitation" <?php $arr = explode(',', $values['select']);
+                <option value="levitation" <?php $arr = explode(',', $values['powers']);
                                             if ($arr != '') {
                                                 foreach ($arr as $value) {
                                                     if ($value == "levitation") {
