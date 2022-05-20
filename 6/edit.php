@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <select class="form-select form-select-lg mb-2" name="select[]" multiple>
+            <select class="form-select form-select-lg mb-2" name="powers[]" multiple>
                 <option value="inf">Бессмертие</option>
                 <option value="through">Прохождение сквозь стены</option>
                 <option value="levitation">Левитация</option>
